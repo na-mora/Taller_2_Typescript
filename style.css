@@ -36,3 +36,6 @@ body{
 .borde-abajo{
     border-bottom: grey;
 }
+.ultimo h3{
+    color: white;
+}

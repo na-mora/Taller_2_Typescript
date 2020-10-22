@@ -19,13 +19,15 @@
     
     <body>
         <div class = "encabezado">
-            <h1>Taller 1 Typescript</h1>
+            <h1>Taller 2 Typescript</h1>
         </div>
 
         <div class="container">
            
            
             <div class="row">
+
+
                 <div class = "Imagen1">
                     <!--Imagen para la division-->
                     <img class="img-fluid max-width: 100% height: auto" src="./avatar.jpeg" alt="Avatar">
@@ -33,35 +35,18 @@
                
                 <div class="col">
                     <h1>Alejandro Mora Pinto</h1>
+                    <div class = "encabezado">
+                        <h2>Datos Personales</h2>
+                    </div>
                     
-                    <h2>Datos Personales</h2>
-                    <table>
+                    <table class = "table">
                         <thead>
                             <tr>
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td  class ="borde-abajo" >Código: </td>
-                                <td>201720058</td>
-                            </tr>
-                            <tr>
-                                <td>Cédula: </td>
-                                <td>1033809855</td>
-                            </tr>
-                            <tr>
-                                <td>Edad: </td>
-                                <td>20 Años</td>
-                            </tr>
-                            <tr>
-                                <td>Dirección: </td>
-                                <td>Kr 25# 48a-14</td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono: </td>
-                                <td>7603228</td>
-                            </tr>
+                        <tbody id = "students">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -69,6 +54,33 @@
                     <div class = "encabezado">
                         <h2>Cursos Actuales</h2>
                     </div>
+                    <h3>Busqueda por intervalo</h3>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+
+                           <div class="col">
+                                <label for="Name">Min: </label>
+                          </div>
+                          <div class="col">
+                              <input type="number" class="form-control" id="search-min" placeholder="Valor min">
+                          </div>
+                          <div class="col">
+                            <label for="Name">Max: </label>
+                          </div>
+                          <div class="col">
+                            <input type="number" class="form-control" id="search-max" placeholder="Valor max">
+                          </div>
+                          <div class="col">
+                            <label for="Name">    </label>
+                          </div>
+                          <div class="col">
+                            <button type="button" id="button-filterByCred" class="btn btn-success">Buscar </button>
+                        </div>
+
+                        </div>
+                    </form>
+                    
+                    <h3>Busqueda por nombre</h3>
                     <form style="margin:10px;">
                         <div class="form-row">
                           <div class="col">
@@ -97,8 +109,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="color-azul">
+                <h3 class ="ultimo">***</h3>
+            </div>
         </div>
 
+
+       
+        <script type="module" src="./scripts/student.js" ></script>
+        <script type="module" src="./scripts/dataStudent.js" ></script>
         <script type="module" src="./scripts/course.js" ></script>
         <script type="module" src="./scripts/dataCourses.js" ></script>
         <script type="module" src="./scripts/main.js"></script>
