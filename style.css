@@ -1,0 +1,38 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+
+}
+
+ img{
+    width: 100%; 
+    max-width: 100%;
+  }
+
+.encabezado{
+    text-align: center;
+    background-color: teal;
+    
+}
+.encabezado h1,h2{
+    color: white;
+}
+.color-azul{
+    background-color: teal;
+    
+}
+.color-azul th,h2 {
+    color: white;
+
+  
+   
+}
+.bordes{
+    border-color: grey;
+    border-width: 0,3rem;
+    border: solid ;
+}
+
+.borde-abajo{
+    border-bottom: grey;
+}
